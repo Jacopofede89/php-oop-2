@@ -120,8 +120,8 @@
 
         public function printFullEmployee() {
             
-            return $this -> name . "  " . $this -> surname  . " : " . $this -> salary . "  "  . "(" . $this -> setHiringDate .")";
-            // return $this ->getName() . "  " . $this ->getSurname() . " : " . $this ->getSalary(). "  "  . "(" . $this -> GetHiringDate() .")";
+            // return $this -> name . "  " . $this -> surname  . " : " . $this -> salary . "  "  . "(" . $this -> setHiringDate .")";
+            return $this ->getName() . "  " . $this ->getSurname() . " : " . $this ->getSalary(). "  "  . "(" . $this -> GetHiringDate() .")";
             
         }
 
@@ -133,15 +133,15 @@
     
     $s1 = new Person("Jacopo","Chessa");
     $s2 = new Person("Guido","Guidi");
-    $s1 -> setDate = ("21/07/1989");
-    $s2 -> setDate = ("01/01/1909");
+    $s1 -> setDate("21/07/1989");
+    $s2 -> setDate("01/01/1909");
 
     echo  $s1 . "<br>";
     echo  $s2 . "<br>";
     echo "<br>--------------------------------------<br><br>";
 
     $s1 = new Employee("Jacopo","Chessa","1200$");
-    $s1 -> setHiringDate = ("01-05-2021");
+    $s1 -> setHiringDate("01-05-2021");
     echo  $s1 . "<br>";
 
     ?>
