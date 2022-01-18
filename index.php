@@ -93,9 +93,7 @@
         private $hiringDate;
         
         public function __construct($name, $surname, $salary) {
-
-            $this -> name = $name;
-            $this -> surname = $surname;
+            parent::__construct($name, $surname);
             $this -> salary = $salary;
         }
         public function setSalary($salary) {
@@ -121,7 +119,7 @@
         public function printFullEmployee() {
             
             // return $this -> name . "  " . $this -> surname  . " : " . $this -> salary . "  "  . "(" . $this -> setHiringDate .")";
-            return $this ->getName() . "  " . $this ->getSurname() . " : " . $this ->getSalary(). "  "  . "(" . $this -> GetHiringDate() .")";
+            return $this ->getName() . "  " . $this ->getSurname() . " : " . $this ->getSalary(). "  "  . "(" . $this -> getHiringDate() .")";
             
         }
 
