@@ -77,7 +77,8 @@
 
         public function printFullPerson() {
             
-            return $this -> name . "  " . $this -> surname . " : " . $this -> setDate;
+            // return $this -> name . "  " . $this -> surname . " : " . $this -> setDate;
+            return $this ->getName() . "  " . $this ->getSurname() . " : " . $this ->getDate();
             
         }
         public function __toString() {
@@ -120,6 +121,7 @@
         public function printFullEmployee() {
             
             return $this -> name . "  " . $this -> surname  . " : " . $this -> salary . "  "  . "(" . $this -> setHiringDate .")";
+            // return $this ->getName() . "  " . $this ->getSurname() . " : " . $this ->getSalary(). "  "  . "(" . $this -> GetHiringDate() .")";
             
         }
 
